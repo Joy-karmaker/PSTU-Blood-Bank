@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.pstubloodbank.DonorProfile"
+    android:background="@drawable/imager"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="0dp">
+        <TextView
+            android:layout_width="380dp"
+            android:layout_height="30dp"
+            android:text="Your Profile"
+            android:textColor="@color/grayColor"
+            android:textSize="20dp"
+            android:fontFamily="sans-serif-smallcaps"
+            android:textAlignment="center"
+            android:background="@color/colorSecondary"
+            />
+
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="210dp">
+        <LinearLayout
+            android:background="@drawable/profilebackground"
+            android:layout_width="match_parent"
+            android:layout_height="190dp"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:src="@drawable/user"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="15dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Joy karmaker"
+                android:layout_gravity="center_horizontal"
+                android:textColor="#ffff"
+                android:textStyle="bold"
+                android:textSize="21sp"
+                android:layout_marginTop="0dp"
+                android:id="@+id/dname" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="360dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:paddingLeft="25dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:src="@drawable/age"/>
+            <TextView
+                android:layout_width="305dp"
+                android:layout_height="wrap_content"
+                android:text="A positive"
+                android:textColor="@color/colorPrimary"
+                android:textSize="18dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dp"
+                android:id="@+id/dblood" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:paddingLeft="25dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:src="@drawable/gender"
+                android:id="@+id/age" />
+            <TextView
+                android:layout_width="305dp"
+                android:layout_height="wrap_content"
+                android:text="Male"
+                android:textColor="@color/colorPrimary"
+                android:textSize="18dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dp"
+                android:id="@+id/dgender" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:paddingLeft="25dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:src="@drawable/newage"/>
+            <TextView
+                android:layout_width="305dp"
+                android:layout_height="wrap_content"
+                android:text="22 years"
+                android:textColor="@color/colorPrimary"
+                android:textSize="18dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dp"
+                android:id="@+id/dage" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:paddingLeft="25dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:src="@drawable/phone"/>
+            <TextView
+                android:layout_width="305dp"
+                android:layout_height="wrap_content"
+                android:text="Available"
+                android:textColor="@color/colorPrimary"
+                android:textSize="18dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dp"
+                android:id="@+id/davailability" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:paddingLeft="25dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:src="@drawable/city2"/>
+            <TextView
+                android:layout_width="305dp"
+                android:layout_height="wrap_content"
+                android:inputType="textImeMultiLine"
+                android:text="Barisal"
+                android:textColor="@color/colorPrimary"
+                android:textSize="18dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dp"
+                android:id="@+id/dbloodgroup" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:paddingLeft="25dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:src="@drawable/phone"/>
+            <TextView
+                android:layout_width="305dp"
+                android:layout_height="wrap_content"
+                android:inputType="textImeMultiLine"
+                android:textColor="@color/colorPrimary"
+                android:textSize="18dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dp"
+                android:id="@+id/dphone"
+                android:text="01778602754" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:paddingLeft="25dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:src="@drawable/email"/>
+            <TextView
+                android:layout_width="305dp"
+                android:layout_height="wrap_content"
+                android:inputType="textImeMultiLine"
+                android:text="joykarmaker2065@gmail.com"
+                android:textColor="@color/colorPrimary"
+                android:textSize="18dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dp"
+                android:id="@+id/dbloodgroup" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:text="Click Here for update profile"
+        android:background="@color/colorPrimary"
+        android:textColor="#ffff"
+        android:id="@+id/dupdate"
+        android:layout_marginTop="15dp"/>
+
+</LinearLayout>

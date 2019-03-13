@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.pstubloodbank">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".LoginActivty" />
+        <activity android:name=".MenuActivity" />
+        <activity android:name=".CustomGrid" />
+        <activity android:name=".SignUpForm" />
+        <activity android:name=".AddDonor" />
+        <activity android:name=".BloodGroupList" />
+        <activity android:name=".BloodRequest" />
+        <activity android:name=".BloodRequestWall" />
+        <activity android:name=".BloodCompatibility" />
+        <activity android:name=".Remainder" />
+        <activity android:name=".BloodCenterList" />
+        <activity android:name=".BloodCenterDetails" />
+        <activity android:name=".BloodCenterAvailability" />
+        <activity android:name=".ProfileActivity" />
+        <activity android:name=".CustomProfileList" />
+        <activity android:name=".BloodDonorList" />
+        <activity android:name=".NotificationActivity" />
+        <activity android:name=".CustomCardView2" />
+        <activity android:name=".RequestDescription" />
+        <activity android:name=".DonorProfile" />
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity android:name=".UpdateActivity" />
+        <activity android:name=".UserDonationStatus" />
+        <activity android:name=".AdminUserProfile" />
+        <activity android:name=".CustomCardView3" />
+        <activity android:name=".AdminUserList" />
+        <activity android:name=".SliderActivity" />
+        <activity android:name=".DonationSmsList" />
+        <activity android:name=".CustomCardView4" />
+        <activity android:name=".SmsSend" />
+        <activity android:name=".UserDonationForm"></activity>
+    </application>
+
+</manifest>

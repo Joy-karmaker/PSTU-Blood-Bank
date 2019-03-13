@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.pstubloodbank.UpdateActivity"
+    android:background="#003366">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Update Your Profile"
+        android:textAlignment="center"
+        android:fontFamily="sans-serif-smallcaps"
+        android:textColor="@color/grayColor"
+        android:id="@+id/textView29"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:inputType="textPersonName"
+        android:background="@drawable/input_outline"
+        android:textColorHint="@color/grayColor"
+        android:textColor="#ffff"
+        android:layout_margin="13dp"
+        android:gravity="center"
+        android:ems="10"
+        android:id="@+id/uname"
+        android:layout_marginTop="36dp"
+        android:hint=" Name"
+        android:layout_below="@+id/textView29"
+        android:layout_alignParentStart="true" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:id="@+id/ucity"
+        android:background="@drawable/input_outline"
+        android:gravity="center"
+        android:textColorHint="@color/grayColor"
+        android:textColor="#ffff"
+        android:layout_margin="13dp"
+        android:layout_below="@+id/uname"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="31dp"
+        android:hint=" City" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Update Availability:"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:fontFamily="sans-serif-smallcaps"
+        android:textColor="@color/grayColor"
+        android:id="@+id/textView7"
+        android:layout_below="@+id/ucity"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="2dp"/>
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:id="@+id/spinner"
+        android:background="@color/grayColor"
+        android:textAlignment="center"
+        android:layout_below="@+id/textView7"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="2dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Availability"
+        android:background="@drawable/input_outline"
+        android:textColorHint="@color/grayColor"
+        android:gravity="center"
+        android:layout_margin="13dp"
+        android:textColor="#ffff"
+        android:id="@+id/uavailability"
+        android:layout_below="@+id/spinner"
+        android:layout_centerHorizontal="true" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:inputType="phone"
+        android:ems="10"
+        android:id="@+id/uphone"
+        android:background="@drawable/input_outline"
+        android:textColorHint="@color/grayColor"
+        android:textColor="#ffff"
+        android:hint=" Contact No"
+        android:gravity="center"
+        android:layout_below="@+id/uavailability"
+        android:layout_margin="13dp"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="update"
+        android:textColor="#ffff"
+        android:background="#012d42"
+        android:id="@+id/update"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+
+
+</RelativeLayout>

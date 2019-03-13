@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    tools:context="com.example.pstubloodbank.BloodRequest"
+    android:background="#003366">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Post Blood Request"
+        android:textAlignment="center"
+        android:fontFamily="sans-serif-smallcaps"
+        android:textColor="@color/grayColor"
+        android:id="@+id/textView11"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="4dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:inputType="textPersonName"
+        android:hint="Enter Your Name"
+        android:background="@drawable/input_outline"
+        android:textColorHint="@color/grayColor"
+        android:textColor="@color/grayColor"
+        android:gravity="center"
+        android:ems="10"
+        android:id="@+id/Rname"
+        android:layout_below="@+id/textView11"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="4dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Select Blood Group:"
+        android:textStyle="bold"
+        android:textColor="@color/grayColor"
+        android:textAlignment="center"
+        android:fontFamily="sans-serif-smallcaps"
+        android:id="@+id/textView12"
+        android:layout_below="@+id/Rname"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="4dp"/>
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:id="@+id/spinner"
+        android:background="@color/grayColor"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:layout_below="@+id/textView12"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="4dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:id="@+id/Runit"
+        android:inputType="number"
+        android:hint="Number Of Blood Unit"
+        android:textColorHint="@color/grayColor"
+        android:background="@drawable/input_outline"
+        android:textColor="@color/grayColor"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/spinner"
+        android:layout_marginBottom="4dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Select Require Date:"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:fontFamily="sans-serif-smallcaps"
+        android:textColor="@color/grayColor"
+        android:id="@+id/textView13"
+        android:layout_below="@+id/Runit"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:text="Select Date"
+        android:id="@+id/date"
+        android:layout_below="@+id/textView13"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="4dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:id="@+id/Rdate"
+        android:hint="Selected Date"
+        android:background="@drawable/input_outline"
+        android:textColorHint="@color/grayColor"
+        android:textColor="@color/grayColor"
+        android:gravity="center"
+        android:layout_below="@+id/date"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="8dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:id="@+id/Rhospital"
+        android:hint="Location(Hospital Name)"
+        android:background="@drawable/input_outline"
+        android:textColorHint="@color/grayColor"
+        android:textColor="@color/grayColor"
+        android:gravity="center"
+        android:layout_below="@+id/Rdate"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="8dp"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:id="@+id/Rcity"
+        android:hint="Enter Your City:"
+        android:background="@drawable/input_outline"
+        android:textColorHint="@color/grayColor"
+        android:textColor="@color/grayColor"
+        android:gravity="center"
+        android:layout_below="@+id/Rhospital"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="8dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:inputType="phone"
+        android:ems="10"
+        android:id="@+id/Rcontact"
+        android:hint="Contact No:"
+        android:background="@drawable/input_outline"
+        android:textColorHint="@color/grayColor"
+        android:textColor="@color/grayColor"
+        android:gravity="center"
+        android:layout_below="@+id/Rcity"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="8dp"/>
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:text="POST"
+        android:id="@+id/Rsubmit"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="1dp"/>
+
+
+</RelativeLayout>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context="com.example.pstubloodbank.CustomCardView4"
+    android:layout_margin="5dp">
+    <ImageView
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:id="@+id/image"
+        android:src="@drawable/index3"
+        android:layout_margin="3dp" />
+
+    <TextView
+        android:layout_width="240dp"
+        android:layout_height="19dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Joy karmaker"
+        android:textColor="@color/grayColor"
+        android:textSize="16dp"
+        android:id="@+id/dname"
+        android:layout_alignTop="@+id/image"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="100dp"/>
+
+    <TextView
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Blood Group: A+"
+        android:textColor="@color/grayColor"
+        android:textSize="14dp"
+        android:id="@+id/dbloodgroup"
+        android:layout_below="@+id/dname"
+        android:layout_alignEnd="@+id/dname"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="30dp"/>
+
+    <TextView
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="E-mail: joykarmaker2065@gmail.com"
+        android:textColor="@color/grayColor"
+        android:textSize="14dp"
+        android:id="@+id/demail"
+        android:layout_below="@+id/dbloodgroup"
+        android:layout_alignEnd="@+id/dbloodgroup"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="50dp"/>
+
+
+</android.support.v7.widget.CardView>

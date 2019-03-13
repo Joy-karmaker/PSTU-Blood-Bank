@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.pstubloodbank.LoginActivty"
+    android:background="@drawable/profilebackground">
+
+
+    <ImageView
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:id="@+id/imageView"
+        android:src="@drawable/ball"
+        android:foregroundGravity="center"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="200dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="Enter Your E-mail And Password"
+            android:textSize="20dp"
+            android:textColor="#ffff"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:fontFamily="sans-serif-smallcaps"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="330dp"
+        android:layout_height="95dp"
+        android:layout_marginTop="250dp"
+        android:background="#45ffffff"
+        android:layout_marginLeft="16dp"
+
+        android:orientation="vertical"
+        android:id="@+id/linearLayout">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:paddingLeft="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:layout_marginTop="4dp">
+            <ImageView
+                android:layout_width="39dp"
+                android:layout_height="39dp"
+                android:src="@drawable/email"
+                android:layout_marginLeft="-4dp"/>
+            <EditText
+                android:layout_width="265dp"
+                android:layout_height="35dp"
+                android:hint=" E-mail..."
+                android:inputType="textEmailAddress"
+                android:background="#FEEEEE"
+
+                android:textColor="@color/colorPrimary"
+                android:textSize="18dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dp"
+                android:id="@+id/dbloodgroup" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:paddingLeft="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:layout_marginTop="10dp">
+            <ImageView
+                android:layout_width="39dp"
+                android:layout_height="39dp"
+                android:src="@drawable/password"
+                android:layout_marginLeft="-4dp"/>
+            <EditText
+                android:layout_width="265dp"
+                android:layout_height="35dp"
+                android:hint=" Password..."
+                android:background="#FEEEEE"
+
+                android:inputType="textPassword"
+                android:textColor="@color/colorPrimary"
+                android:textSize="18dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dp"
+                android:id="@+id/Lpassword" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="120dp"
+        android:layout_height="45dp"
+        android:text="LOG-IN"
+        android:textColor="#ffff"
+        android:id="@+id/Login"
+        android:background="@color/colorAccent"
+        android:gravity="center"
+        android:layout_below="@+id/linearLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_marginTop="450dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Not registered!\nClick sign-up button"
+            android:textColor="#ffff"
+            android:gravity="center"
+            android:textSize="18dp"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="12dp"
+            android:text="SIGN-UP"
+            android:textSize="20dp"
+            android:textColor="#ffff"
+            android:background="@color/colorPrimary"
+            android:id="@+id/signup" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>
